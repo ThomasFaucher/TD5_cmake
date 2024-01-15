@@ -28,15 +28,15 @@ void main(void) {
     float intensity = max(dot(L,N),0.0);
     vec4 final_color_mat = vec4(0.2,0.2,0.2, 0.0);
 
-    final_color_mat += 0.9 * intensity;
+    frag_color= toonify(intensity);
 
-    vec3 E = normalize(eyeVec);
-    vec3 R = reflect(-L, N);
-    float specular = pow(max(dot(R, E), 0.0), 2);
+    //vec3 E = normalize(eyeVec);
+    //vec3 R = reflect(-L, N);
+    //float specular = pow(max(dot(R, E), 0.0), 2);
 
-    vec4 final_color_ombre = vec4(0.8,0.8,0.8,1.0) * specular;
+    //vec4 final_color_ombre = vec4(0.8,0.8,0.8,1.0) * specular;
 
-    vec4 blended_color = mix(final_color_ombre, final_color_mat, 0.5);
+    //vec4 blended_color = mix(final_color_ombre, final_color_mat, 0.5);
 
-    frag_color = blended_color;
+    //frag_color = blended_color;
 }

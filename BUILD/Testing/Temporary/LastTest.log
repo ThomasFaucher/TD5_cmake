@@ -1,0 +1,19 @@
+Start testing: Dec 12 10:49 CET
+----------------------------------------------------------
+1/1 Testing: SimpleTest
+1/1 Test: SimpleTest
+Command: "/home/iut45/Etudiants/o22101900/WinHome/S1/R5.06_Multimedia/TD5_cmake/BUILD/td"
+Directory: /home/iut45/Etudiants/o22101900/WinHome/S1/R5.06_Multimedia/TD5_cmake/BUILD
+"SimpleTest" start time: Dec 12 10:49 CET
+Output:
+----------------------------------------------------------
+1782380.00359496
+<end of output>
+Test time =  10.21 sec
+----------------------------------------------------------
+Test Passed.
+"SimpleTest" end time: Dec 12 10:49 CET
+"SimpleTest" time elapsed: 00:00:10
+----------------------------------------------------------
+
+End testing: Dec 12 10:49 CET

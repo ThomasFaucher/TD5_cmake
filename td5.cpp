@@ -71,10 +71,8 @@ void display()
     model = glm::scale(  glm::mat4( 1.0f ), glm::vec3( scale*3.5 ) ) * model ;
     
      // Le modele subit une rotation suivant l'axe z.
-    glm::mat4 rot=glm::rotate( glm::mat4( 1.0f ), glm::degrees( angle ), glm::vec3( 0.0f, 1.0f, 0.0f ) );
  
-    model = glm::rotate( glm::mat4( 1.0f ), glm::degrees( angle ), glm::vec3( 0.0f, 1.0f, 0.0f ) ) * model;
-
+    model = glm::rotate( glm::mat4(1.0f), glm::degrees( angle ), glm::vec3( -1.0f, 1.0f, 0.0f ) ) * model;
 
     // Calcul de la matrice mvp.
     mvp = proj * view * model;
@@ -169,7 +167,7 @@ void initVAOs()
 {
     unsigned int vboids[ 4 ];
 
-    std::ifstream ifs( concat(MY_SHADER_PATH, "/meshes/space_station2.off" ));
+    std::ifstream ifs( concat(MY_SHADER_PATH, "/meshes/milleniumfalcon.off" ));
     if (!ifs)
     {
         throw std::runtime_error("can't find the meshe!! Check the name and the path of this file? ");
